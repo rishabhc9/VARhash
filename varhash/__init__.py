@@ -112,7 +112,7 @@ def mod_vig(plaintext, key):
         ciphertext += charlist[(value + len(key_as_int))%len(charlist)]
     return ciphertext
 
-def varhash(strinput):
+def hash(strinput):
     str1=mainfunc(strinput)
     freqencr=mainfunc(frequencySorting(strinput))
     finalenc=freqencr+str1
